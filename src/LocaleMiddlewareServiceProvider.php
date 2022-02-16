@@ -7,7 +7,7 @@ use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
-class LocaleMiddlewareProvider extends ServiceProvider
+class LocaleMiddlewareServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -31,7 +31,7 @@ class LocaleMiddlewareProvider extends ServiceProvider
         // add middleware
         $router = app(Router::class);
         $router->aliasMiddleware('locale', LocaleMiddleware::class);
-        foreach(config('locale-middleware.groups') as $group) {
+        foreach (config('locale-middleware.groups') as $group) {
             $router->pushMiddlewareToGroup($group, 'locale');
         }
     }
