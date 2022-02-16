@@ -1,6 +1,6 @@
 {
-  "name": "berthott/laravel-api-cache",
-  "description": "Laravel Helper for Caching API Responses",
+  "name": "berthott/laravel-locale-middleware",
+  "description": "Laravel Helper for localizing API routes",
   "license": "MIT",
   "authors": [
       {
