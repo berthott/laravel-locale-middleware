@@ -24,7 +24,7 @@ $ composer require berthott/laravel-locale-middleware
 
 To change the default options use
 ```
-$ php artisan vendor:publish --provider="berthott\LocaleMiddleware\LocaleMiddlewareProvider" --tag="config"
+$ php artisan vendor:publish --provider="berthott\LocaleMiddleware\LocaleMiddlewareServiceProvider" --tag="config"
 ```
 * `queryVariableName`: specifies a custom name for the query parameter. Defaults to `locale`.
 * `groups`: an array of middleware groups to add the locale middleware to. Defaults to `['api']`.

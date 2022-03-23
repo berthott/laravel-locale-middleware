@@ -2,7 +2,7 @@
 
 namespace berthott\LocaleMiddleware\Tests;
 
-use berthott\LocaleMiddleware\LocaleMiddlewareProvider;
+use berthott\LocaleMiddleware\LocaleMiddlewareServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -16,7 +16,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            LocaleMiddlewareProvider::class,
+            LocaleMiddlewareServiceProvider::class,
         ];
     }
 
