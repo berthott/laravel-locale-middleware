@@ -1,10 +1,10 @@
-# Laravel-Locale-Middleware - A helper for localizing API routes
+# Laravel-Locale-Middleware
 
-Easily add a locale option to all your API routes
+A helper for localizing API routes. Easily add a locale option to all your API routes.
 
 ## Installation
 
-```
+```sh
 $ composer require berthott/laravel-locale-middleware
 ```
 
@@ -23,11 +23,11 @@ $ composer require berthott/laravel-locale-middleware
 ## Options
 
 To change the default options use
-```
+```php
 $ php artisan vendor:publish --provider="berthott\LocaleMiddleware\LocaleMiddlewareServiceProvider" --tag="config"
 ```
-* `queryVariableName`: specifies a custom name for the query parameter. Defaults to `locale`.
-* `groups`: an array of middleware groups to add the locale middleware to. Defaults to `['api']`.
+* `queryVariableName`: Specifies a custom name for the query parameter. Defaults to `locale`.
+* `groups`: An array of middleware groups to add the locale middleware to. Defaults to `['api']`.
 
 ## Compatibility
 

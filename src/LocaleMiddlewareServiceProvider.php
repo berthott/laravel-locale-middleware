@@ -7,6 +7,9 @@ use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Register the libraries features with the laravel application.
+ */
 class LocaleMiddlewareServiceProvider extends ServiceProvider
 {
     /**
