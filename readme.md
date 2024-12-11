@@ -1,3 +1,5 @@
+![test workflow](https://github.com/berthott/laravel-locale-middleware/actions/workflows/test.yml/badge.svg)
+
 # Laravel-Locale-Middleware
 
 A helper for localizing API routes. Easily add a locale option to all your API routes.
